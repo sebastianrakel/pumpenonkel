@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        2.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +216,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -451,7 +465,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pumpenonkel_pcb.kicad_pro",
+    "filename": "pumpenonkel.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -613,6 +627,30 @@
     [
       "4907b446-0d18-4224-91a9-ecc41278cc91",
       "Root"
+    ],
+    [
+      "a47695ef-2826-4d86-80be-828863717985",
+      "relais_channel_1"
+    ],
+    [
+      "064d1bb1-bded-4458-819a-ed7b30cd33ff",
+      "relais_channel_2"
+    ],
+    [
+      "fe18f98d-f63e-4780-b642-3a8c6387d2bd",
+      "relais_channel_3"
+    ],
+    [
+      "722fd0a3-3a3c-40b3-a868-6ef1c0279e7f",
+      "relais_channel_4"
+    ],
+    [
+      "84dc532c-e9eb-431a-b7bf-512a80691642",
+      "relais_channel_5"
+    ],
+    [
+      "956d0192-f085-4d9a-a9be-0e070f0dc75b",
+      "relais_channel_6"
     ]
   ],
   "text_variables": {}
