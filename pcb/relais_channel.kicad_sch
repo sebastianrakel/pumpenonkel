@@ -2133,7 +2133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92"
 			(at 72.39 65.405 0)
 			(effects
 				(font

@@ -988,6 +988,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:RaspberryPi_Pico_W"
 			(pin_names
 				(offset 0.762)
@@ -2007,6 +2143,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 199.39 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0e0c7a0-2372-4283-a347-3bcf20f76e5a")
+	)
 	(no_connect
 		(at 207.01 135.89)
 		(uuid "0ed7023c-94b5-4bf0-9245-cef8a0e062ed")
@@ -2134,6 +2276,16 @@
 			(type default)
 		)
 		(uuid "099c16b9-1b30-4f60-88ef-61e80d796d85")
+	)
+	(wire
+		(pts
+			(xy 199.39 48.26) (xy 199.39 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a6689ad-5ecd-43c8-8f4f-2a24ea32a359")
 	)
 	(wire
 		(pts
@@ -2277,6 +2429,36 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 40.64) (xy 199.39 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d5778f-dc19-4d6e-9e0e-2f18ebc5c2a3")
+	)
+	(wire
+		(pts
+			(xy 218.44 25.4) (xy 218.44 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921a4cd5-b57d-4cd9-a746-681af3525b71")
+	)
+	(wire
+		(pts
+			(xy 199.39 26.67) (xy 199.39 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9634721f-cc28-44b3-833e-95c7828235e1")
+	)
+	(wire
+		(pts
 			(xy 199.39 125.73) (xy 207.01 125.73)
 		)
 		(stroke
@@ -2354,16 +2536,6 @@
 			(type default)
 		)
 		(uuid "dd7dc657-be7e-49ff-8ea0-267a48119873")
-	)
-	(wire
-		(pts
-			(xy 199.39 26.67) (xy 199.39 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb2bf5ac-ce29-4e18-8960-35afa8d82304")
 	)
 	(wire
 		(pts
@@ -2549,28 +2721,6 @@
 			)
 		)
 	)
-	(global_label "VAC"
-		(shape input)
-		(at 218.44 25.4 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5725c30a-2963-4fc2-8438-8d7bdd4ff3ab")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.44 31.8324 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CH6"
 		(shape input)
 		(at 199.39 128.27 180)
@@ -2727,7 +2877,7 @@
 	)
 	(global_label "VAC"
 		(shape input)
-		(at 199.39 30.48 270)
+		(at 199.39 52.07 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2737,7 +2887,7 @@
 		)
 		(uuid "a492edc8-325f-4828-b00d-c7b0ccc05afb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.39 36.9124 90)
+			(at 199.39 58.5024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3190,6 +3340,76 @@
 			(project ""
 				(path "/4907b446-0d18-4224-91a9-ecc41278cc91"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 199.39 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27d15b81-422b-47d4-a04a-ee75664ea4f4")
+		(property "Reference" "F1"
+			(at 196.85 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 196.85 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Lateral_P18.80x5.00mm_D1.17mm_Horizontal"
+			(at 201.168 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 199.39 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0542f3dd-7003-427d-8933-fa9d82b28bc2")
+		)
+		(pin "1"
+			(uuid "0c482620-2095-4f99-bc96-e379f14c3857")
+		)
+		(instances
+			(project ""
+				(path "/4907b446-0d18-4224-91a9-ecc41278cc91"
+					(reference "F1")
 					(unit 1)
 				)
 			)
