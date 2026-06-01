@@ -1,0 +1,14 @@
+| Item        | Price |
+|-------------+-------|
+| Pico W      |    10 |
+| Jumper      |  0.10 |
+| Pin Header  |     1 |
+| Diodes      |  0.20 |
+| Resistors   |  0.20 |
+| Relais      |     6 |
+| Transistors |  0.20 |
+| LED         |  0.20 |
+| PCB         |     5 |
+|-------------+-------|
+| Total       |  22.9 |
+#+TBLFM: @>$2=vsum(@2..@-1)
